@@ -14,9 +14,9 @@ def aproximapi(n):
   return p
 k=int(raw_input('Nº de veces que desea se ejecute el programa ')) 
 s=[]
-for t in range(1,k+1):
-  n=int(raw_input('Valor de subintervalos: '))
+n=int(raw_input('Valor de subintervalos: '))
+for t in range(1,n+1):
   #!print 'El valor aproximado de pi con 35 decimales es: %.35f' %pi
-  print aproximapi(n)
-  s=s+[aproximapi(n)]
-print s
+  print'El valor aproximado de pi es: %f' %aproximapi(n*t)
+  s=s+[aproximapi(n*t)]
+print 'La lista de resultados es %s'%s
